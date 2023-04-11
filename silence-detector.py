@@ -20,7 +20,7 @@ parser.add_argument(
 )
 parser.add_argument(
     "--on-silence",
-    default=f"echo The sound card was silent for too long",
+    default="echo The sound card was silent for too long",
     help="code to run on silence",
 )
 parser.add_argument(

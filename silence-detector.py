@@ -42,6 +42,7 @@ def main():
 
     silent_time = 0
     silent = False
+    print("Starting detection...", file=sys.stderr, flush=True)
     while True:
         length, data = device.read()
         if not length:

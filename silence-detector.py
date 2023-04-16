@@ -20,11 +20,11 @@ parser.add_argument(
 )
 parser.add_argument(
     "--on-silence",
-    default="echo The sound card was silent for too long",
+    default="./on-silence.sh",
     help="code to run on silence",
 )
 parser.add_argument(
-    "--on-sound", default="echo Not silent anymore", help="code to run on sound"
+    "--on-sound", default="./on-sound.sh", help="code to run on sound"
 )
 parser.add_argument("--monitor", action="store_true", help="run volume monitor")
 
